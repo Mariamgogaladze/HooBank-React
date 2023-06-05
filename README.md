@@ -14,7 +14,7 @@ Hoobak is a responsive web application built using React.js, HTML, and CSS. It p
 
 ## Demo
 
-You can try out the live demo of the ToDo App [here](https://www.example.com)
+You can try out the live demo of the ToDo App [here](https://hoobank-react-webapp.netlify.app/)
 
 ## Features
 
