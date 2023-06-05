@@ -1,0 +1,136 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-inline: 64px;
+  padding-top: 36px;
+}
+a {
+  text-decoration: none;
+  color: #ffffffb2;
+  cursor: pointer;
+}
+a:hover {
+  color: white;
+}
+.logo-image {
+  width: 124px;
+  height: 32px;
+}
+.list-container ul {
+  list-style: none;
+  display: flex;
+  gap: 56px;
+  font-size: 16px;
+  line-height: 21px;
+  line-height: 130%;
+}
+
+.first {
+  color: white;
+}
+.menu-image {
+  display: none;
+}
+.nav-item-image {
+  display: none;
+}
+
+
+@media (max-width: 996px) {
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+
+  .nav-item-image img {
+    width: 30px;
+  }
+  .nav-item-image {
+    display: block;
+  }
+  .nav-container {
+    position: relative;
+  }
+  .menu-image {
+    display: block;
+  }
+  .list-container ul {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    position: fixed;
+    background: linear-gradient( 144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61% );;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-inline: 60px;
+    padding-top: 20px;
+    -webkit-animation: scale-up-hor-right 0.4s
+      cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @-webkit-keyframes scale-up-hor-right {
+    0% {
+      -webkit-transform: scaleX(0.4);
+      transform: scaleX(0.4);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+  }
+  @keyframes scale-up-hor-right {
+    0% {
+      -webkit-transform: scaleX(0.4);
+      transform: scaleX(0.4);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+  }
+  a {
+    position: relative;
+  }
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    border-bottom: 3px solid aqua;
+    transition: width 0.3s ease;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+}
+@media (max-width: 1130px) {
+  .nav-container {
+    padding-inline: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-container {
+    padding-inline: 90px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-container {
+    padding-inline: 40px;
+  }
+}

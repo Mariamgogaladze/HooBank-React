@@ -1,0 +1,33 @@
+.topic-h1 {
+  font-size: 48px;
+  color: white;
+  line-height: 77px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+.topic-p {
+  font-size: 18px;
+  line-height: 31px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 1130px) {
+  .topic-h1 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .topic-div {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .topic-h1 {
+    font-size: 28px;
+  }
+}

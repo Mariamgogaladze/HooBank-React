@@ -1,0 +1,23 @@
+.Financial-container {
+  display: flex;
+  padding-inline: 64px;
+  padding-top: 190px;
+  gap: 90px;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .Financial-container {
+    flex-direction: column;
+  }
+  .financial-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .Financial-container {
+    padding-inline: 40px;
+  }
+}

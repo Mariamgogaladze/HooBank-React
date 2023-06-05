@@ -1,0 +1,93 @@
+.analytics-container {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  margin-top: 110px;
+  padding-inline: 64px;
+}
+
+.analytics-div {
+  display: flex;
+  align-items: center;
+}
+
+.analytics-h1 {
+  font-size: 40.89px;
+  color: #ffffff;
+  line-height: 53px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.analytics-p {
+  font-size: 20.45px;
+  line-height: 27px;
+  background-image: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.line {
+  width: 1.7px;
+  background-color: rgba(255, 255, 255, 0.707);
+  height: 15px;
+  margin-left: 56px;
+}
+.second-line {
+  display: none;
+}
+
+@media (max-width: 1320px) {
+  .line {
+    margin-left: 16px;
+  }
+  .analytics-h1 {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1220px) {
+  .analytics-container {
+    gap: 36px;
+  }
+  .analytics-h1 {
+    font-size: 20px;
+  }
+  .analytics-p {
+    font-size: 12px;
+
+    line-height: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .analytics-h1 {
+    font-size: 25.89px;
+  }
+  .analytics-p {
+    font-size: 15.45px;
+    line-height: 27px;
+  }
+  .line {
+    display: none;
+  }
+  .analytics-container {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .second-line {
+    display: block;
+    width: 1.7px;
+    background-color: rgba(255, 255, 255, 0.707);
+    height: 15px;
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+}
+.people-container {
+  padding-inline: 64px;
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (max-width: 839px) {
+  .title-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .people-container {
+    padding-inline: 40px;
+  }
+}

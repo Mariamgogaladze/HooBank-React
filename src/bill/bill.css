@@ -1,0 +1,68 @@
+.bill-container {
+  display: flex;
+  padding-inline: 64px;
+  padding-top: 190px;
+  gap: 240px;
+}
+.bill {
+  width: 130%;
+}
+.bill-control {
+ padding-top: 100px;
+}
+.white2-gradient {
+  background: rgb(255 255 255 / 70%);
+  filter: blur(300px);
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  height: 40%;
+  left: -450px;
+}
+.pink-gradient {
+  background: rgba(83, 20, 116, 0.283);
+  filter: blur(100px);
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  height: 40%;
+  left: -150px;
+}
+.apple {
+  margin-right: 32px;
+  cursor: pointer;
+}
+.google {
+  cursor: pointer;
+}
+.methods-container {
+  display: flex;
+}
+@media (max-width: 1130px) {
+  .bill-control {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bill-container {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .bill {
+    width: 100%;
+  }
+  .billcard-container {
+    display: flex;
+    justify-content: center;
+  }
+  .methods-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .bill-container {
+    padding-inline: 40px;
+  }
+}

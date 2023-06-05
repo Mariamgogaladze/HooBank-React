@@ -1,0 +1,123 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.robot {
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 408px;
+  height: 40px;
+  background-image: linear-gradient(#272727, #11101d);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.introduction-container {
+  margin-top: 127px;
+  padding-left: 64px;
+}
+.introduction-first-p {
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.603);
+}
+.percent-span {
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+}
+.introduction-h1 {
+  color: white;
+  font-size: 68px;
+  line-height: 101px;
+  margin-bottom: 30px;
+}
+.generation-span {
+  background-image: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.introduction-p {
+  font-size: 18px;
+  line-height: 36.6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  max-width: 480px;
+}
+
+.introduction-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.wh-gr-2 {
+  background: rgb(255 255 255 / 70%);
+  filter: blur(300px);
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  height: 40%;
+  left: -450px;
+}
+
+@media (max-width: 1000px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .white-gradient {
+    bottom: -500px;
+    right: 90px;
+  }
+  .pink-gradient {
+    bottom: -300px;
+    top: unset;
+  }
+}
+
+@media (max-width: 730px) {
+  .introduction-h1 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+  .wh-gr-2 {
+    left: -250px;
+  }
+}
+@media (max-width: 500px) {
+  .introduction-h1 {
+    font-size: 38px;
+    line-height: 70px;
+  }
+  .introduction-container {
+    padding-inline: 40px;
+  }
+  .discount {
+    width: 270px;
+  }
+  .introduction-first-p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .percent-span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
